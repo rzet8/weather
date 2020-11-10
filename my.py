@@ -6,9 +6,9 @@ import logs
 
 from telebot import types
 
-bot = telebot.TeleBot("1331389265:AAGL_9W8cJ-6cmybLAtf4g-mFmbo3z4CrDI")
+bot = telebot.TeleBot(os.environ.get('TELEGRAM_TOKEN'))
 
-weather = "f4e50c0b4dda405a8d2194427200811"
+weather = "os.environ.get('WEATHER_TOKEN)
 weather_url = f"https://api.weatherapi.com/v1/forecast.json?key={weather}&days=7&lang=ru&country=russia&q="
 
 def normal_time(t):

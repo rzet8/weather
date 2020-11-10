@@ -8,7 +8,7 @@ from telebot import types
 
 bot = telebot.TeleBot(os.environ.get('TELEGRAM_TOKEN'))
 
-weather = "os.environ.get('WEATHER_TOKEN)
+weather = os.environ.get('WEATHER_TOKEN)
 weather_url = f"https://api.weatherapi.com/v1/forecast.json?key={weather}&days=7&lang=ru&country=russia&q="
 
 def normal_time(t):
